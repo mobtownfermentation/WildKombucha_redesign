@@ -39,6 +39,7 @@ $(document).ready(function(){
         if (docked == true){
           mobileSoc.style.display = 'block';
         }
+        clearInterval(picInterval);
         $('#picSubRow').animate({marginLeft:'0%'},700);
         $('.galleryBtn.left').css('display','block');
         $('.galleryBtn.right').css('display','none');
@@ -175,6 +176,10 @@ $(document).ready(function(){
     $("#picRow").on("mouseover touchstart",function(){
       clearInterval(picInterval);
     });
+
+    if (window.innerWidth <=550){
+      clearInterval(picInterval);
+    }
   
   var curr = 0;
   var mv = 0;
