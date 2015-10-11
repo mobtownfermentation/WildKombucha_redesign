@@ -42,7 +42,7 @@ body {
 #topBG{
 	background-image:url('../images/storefront.png');
 	position:absolute;
-	height:100vh;
+	height:100%;
 	width:100vw;
 	background-size:cover;
 	background-position:50% 12.5%;
@@ -248,7 +248,7 @@ a#Contact-Mobtown.subNavBtn.active {
 	#histRow{display:none;}
 	#extraSpace{display:none;}
 }
-@media (max-width:825px){#histRow{display:none;}}
+@media (max-width:825px){#histRow{display:none;}#extraSpace{display:none;}}
 
 form input, form textarea{
 	width:100%;
