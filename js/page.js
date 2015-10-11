@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
     var menu = document.getElementById('navMenu');
-    var trigger = window.innerHeight-menu.offsetHeight;
+    var trigger = window.outerHeight-menu.offsetHeight;
     var mobileSoc = document.getElementById('mobileSoc');
 
     window.onscroll = dockMenu;
     var docked = false;
     function dockMenu() {
+      //console.log(window)
       if (window.pageYOffset >= trigger && docked == false){
         var menuH = menu.offsetHeight;
         menu.style.position = 'fixed';
@@ -194,7 +195,6 @@ $(document).ready(function(){
         $('.galleryBtn.up').fadeIn(700);
       }
       $('#inHistRow').animate({marginTop:curr+'px'},700);
-      console.log(mv)
     }
 
     function moveU(){
