@@ -212,38 +212,6 @@ a#Contact-Mobtown.subNavBtn.active {
 	width:200%;
 	height:300px;
 }
-@media (max-width: 550px) {
-	.btnGrp .subNavBtn{
-		font-size:2.4rem;
-		width:50%;
-	}
-	.subNavBtn{
-		-moz-box-shadow: inset 0 0 5px #000000;
-    	-webkit-box-shadow: inset 0 0 5px #000000;
-    	box-shadow: inset 0 0 5px #000000;
-	}
-	.btnGrp{
-		margin:0;
-		width:100%;
-	}
-	#map{
-		margin-top:3rem;
-	}
-	#picSubRow{
-		width:100%;
-		/*right:7.5%;*/
-	}
-	.pic.pic1{margin-bottom:20px;}
-		
-	.galleryBtn.left,.galleryBtn.right{
-		visibility: hidden;
-	}
-	#picRow{
-		overflow-y:hidden;
-	}
-	form label{font-size:12px;}
-}
-@media (max-width:825px){#histRow{display:none;}#extraSpace{display:none;}}
 
 form input, form textarea{
 	width:100%;
@@ -545,6 +513,41 @@ form input[type="submit"]:hover{
 	color:white;
 }
 
-
+@media (max-width: 550px) {
+	.btnGrp .subNavBtn{
+		font-size:2.4rem;
+		width:50%;
+	}
+	.subNavBtn{
+		-moz-box-shadow: inset 0 0 5px #000000;
+    	-webkit-box-shadow: inset 0 0 5px #000000;
+    	box-shadow: inset 0 0 5px #000000;
+	}
+	.btnGrp{
+		margin:0;
+		width:100%;
+	}
+	#map{
+		margin-top:3rem;
+	}
+	#picSubRow{
+		width:100%;
+		/*right:7.5%;*/
+	}
+	.pic.pic1{margin-bottom:20px;}
+		
+	.galleryBtn.left,.galleryBtn.right{
+		visibility: hidden;
+	}
+	#picRow{
+		overflow-y:hidden;
+	}
+	form label{font-size:12px;}
+}
+@media (max-width:825px){
+	#histRow{display:none;}
+	#extraSpace{display:none;}
+	form label{font-size:14px;}
+}
 
 
