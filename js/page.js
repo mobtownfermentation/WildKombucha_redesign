@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var menu = document.getElementById('navMenu');
-    var trigger = window.outerHeight-menu.offsetHeight;
+    var trigger = window.innerHeight-menu.offsetHeight;
     var mobileSoc = document.getElementById('mobileSoc');
 
     window.onscroll = dockMenu;
@@ -45,6 +45,7 @@ $(document).ready(function(){
         $('.galleryBtn.left').css('display','block');
         $('.galleryBtn.right').css('display','none');
       }
+      dockMenu();
     }
 
     document.getElementsByClassName('toTop')[0].onclick = navigation;
